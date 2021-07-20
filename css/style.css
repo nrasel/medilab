@@ -427,7 +427,32 @@ sup,sub{
     transform: scale(1.1);
 }
 
-
+.contact-info i{
+    font-size: 20px;
+    color: #1977cc;
+    width: 44px;
+    height: 44px;
+    background: #d6e9fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    transition: all 0.3s ease-in-out;
+    float: left;
+    margin-right: 18px;
+}
+.address:hover i{
+    background: #1977cc;
+    color: #fff;
+}
+.email:hover i{
+    background: #1977cc;
+    color: #fff;
+}
+.phone:hover i{
+    background: #1977cc;
+    color: #fff;
+}
 
 
 
