@@ -102,9 +102,72 @@ navigation bar
     about section
 -------------------------- */
 
-.video-box{
-    background: url(../images/about.jpg);
+
+.about-title{
+    font-size: 30px;
+    font-weight: 700;
+    color: #2c4964;
+    margin-bottom: 15px;
+}
+.about-info p{
+    color: rgb(102, 85, 85);
+    font-weight: lighter;
+}
+.about-icon i{
+    font-size: 32px;
+    color: #1977cc;
+    border: 1px solid #1977cc;
+    padding: 14px;
+    border-radius: 50px;
+    transition: 0.4s;
+}
+.about-boxes:hover i{
+    background-color: #1977cc;
+    color: white ;
+}
+/*--------------------------
+    counter section
+-------------------------- */
+.counts{
+    background-color: #f1f7fd;
+}
+.counter-box{
+    padding: 30px 30px 25px 30px;
+    width: 100%;
+    position: relative;
+    text-align: center;
+    background: #fff;
+    text-align: center;
+    border-radius: 10px;
+}
+.counter-box i{
+    position: absolute;
+    top: -20px;
+    left: 50%;
+   background-color: #1977cc;
+   color: white;
+   padding: 13px;
+   border-radius: 50%;
+   transform: translate(-50%);
+   
 }
 
 
 
+
+
+/* ----------------
+media query
+--------------- */
+/* @media (min-width: 992px) {
+    .top-banner{
+        position: relative;
+       
+    }
+    .why-us-position{
+        position: absolute;
+        top: 500px;
+        left: 100px;
+        right: 100px;
+    }
+} */
