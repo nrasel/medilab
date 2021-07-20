@@ -153,21 +153,153 @@ navigation bar
 }
 
 
+/*--------------------------
+    services section
+-------------------------- */
+.section-title h1{
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+}
+.section-title h1::after{
+    position: absolute;
+    content: '';
+    width: 40px;
+    height: 3px;
+    background-color: #1977cc;
+    bottom: 0;
+    display: block;
+    left: calc( 50% - 20px);
+}
+.section-title h1::before{
+    content: '';
+    position: absolute;
+    width: 120px;
+    height: 1px;
+    background: #ddd;
+    left: calc(50% - 60px);
+    bottom: 1px;  
+}
+.service-box{
+    text-align: center;
+    border: 1px solid #d5e1ed;
+    padding: 80px 20px;
+    transition: all ease-in-out 0.3s;
+    position: relative;
+    border-radius: 5px;
+}
+.service-box:hover{
+    background: #1977cc;
+    color: white;
+}
+.service-box:hover .service-icon{
+    background: white;
+}
+.service-box:hover .service-icon i{
+    color: #1977cc;
+}
+.service-icon{
+    background: #1977cc;
+    height: 64px;
+    width: 64px;
+    margin: 0 auto;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    transition: all .3s ease-out 0s;
+    transform-style: preserve-3d;
+}
+.service-icon::before{
+    position: absolute;
+    content: '';
+    top: -8px;
+    left: -8px;
+    border-radius: 5px;
+    width: 70px;
+    height: 65px;
+    background: #badaf7;
+    transition: all .3s ease-out 0s;
+    transform: translateZ(-1px);
+}
+.service-icon i{
+    font-size: 28px;
+    color: white;
+
+}
+
+
+/*--------------------------
+    appointment section
+-------------------------- */
+
+.form-control:focus{
+    border-color: #1977cc;
+    box-shadow: none;
+    border-radius: 0;
+}
+.border-radius-change{
+    border-radius: 0;
+}
+.btn-appointment{
+    background: #1977cc;
+    color: white;
+}
+.btn-appointment:hover{
+    color: white;
+    background: #1c84e3;
+}
+
+
+/* --------------------
+departments
+---------------------- */
+.departments .nav-tabs{
+    border-bottom: 0;
+}
+.departments .nav-link{
+   border: 0;
+   padding: 12px 15px 12px 0;
+   transition: 0.4s;
+   color: #2c4964;
+   border-radius: 0;
+   border-right: 2px solid #ebf1f6;
+   font-size: 15px;
+   font-weight: 600;
+}
+.departments .nav-link.active{
+    color: #1977cc;
+    border-color: #1977cc;
+}
+.departments .nav-link:hover{
+    color: #1977cc;
+}
+.departments h3{
+    font-size: 26px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #2c4964;
+}
+.departments p{
+    color: #777777;
+}
+
+/* --------------------
+departments
+---------------------- */
 
 
 
-/* ----------------
-media query
---------------- */
-/* @media (min-width: 992px) {
-    .top-banner{
-        position: relative;
-       
+
+
+@media (max-width: 992px) {
+    .departments .nav-link.active{
+        color: white;
+        border-color: white;
+        background-color: #1977cc;
     }
-    .why-us-position{
-        position: absolute;
-        top: 500px;
-        left: 100px;
-        right: 100px;
-    }
-} */
+    .departments .nav-link{
+        text-align: center;
+        border-right: 0;
+    } 
+}
