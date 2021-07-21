@@ -11,6 +11,9 @@ navigation bar
     font-size: 30px;
     color: #2c4964 !important;
 }
+.navbar{
+    border-bottom: 2px solid rgb(226, 233, 226);
+}
 .navbar-background{
     background-color: #ffffff;
 }
