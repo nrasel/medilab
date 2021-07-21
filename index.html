@@ -21,16 +21,58 @@
     <header>
         <!-- navigation bar -->
        <section>
-            <nav class="navbar navbar-expand-lg navbar-light navbar-background">
+            <nav class="navbar navbar-expand-lg  navbar-light navbar-background">
                 <div class="container">
                   <h1 class="logo"><a class="navbar-brand" href="#">Medilab</a></h1>
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
+
+                      <button class="btn btn-primary d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="fas fa-bars"></i></button>
+
+                      <div class="offcanvas offcanvas-end d-lg-none" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                        <div class="offcanvas-header">
+                          <h5 id="offcanvasRightLabel"></h5>
+                          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body d-lg-none">
+
+                          <ul class="navbar-nav ms-auto mb-2 d-lg-none mb-lg-0">
+                            <li class="nav-item">
+                              <a class="nav-link " aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="#">About</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="#">Services</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="#">Departments</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="#">Doctors</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="#">About</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                  Drop Down
+                              </a> 
+                              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">dropdown 1</a></li>
+                                <li><a class="dropdown-item" href="#">dropdown 2</a></li>
+                                <li><a class="dropdown-item" href="#">dropdown 3</a></li>
+                                <li><a class="dropdown-item" href="#">dropdown 4</a></li>
+                                <li><a class="dropdown-item" href="#">dropdown 5</a></li>
+                                <li><a class="dropdown-item" href="#">dropdown 6</a></li>
+                                
+                              </ul>
+                        </div>
+                      </div>
+
                   <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                       <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a class="nav-link " aria-current="page" href="#">Home</a>
                       </li>
                       <li class="nav-item">
                         <a class="nav-link" href="#">About</a>
@@ -52,17 +94,19 @@
                             Drop Down
                         </a> 
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                          <li><a class="dropdown-item" href="#">Action</a></li>
-                          <li><a class="dropdown-item" href="#">Another action</a></li>
-                          <li><hr class="dropdown-divider"></li>
-                          <li><a class="dropdown-item" href="#">Something else here</a></li>
+                         <li><a class="dropdown-item" href="#">dropdown 1</a></li>
+                                <li><a class="dropdown-item" href="#">dropdown 2</a></li>
+                                <li><a class="dropdown-item" href="#">dropdown 3</a></li>
+                                <li><a class="dropdown-item" href="#">dropdown 4</a></li>
+                                <li><a class="dropdown-item" href="#">dropdown 5</a></li>
+                                <li><a class="dropdown-item" href="#">dropdown 6</a></li>
                         </ul>
                       </li>
                       <li class="nav-item">
                         <a class="nav-link" href="#">Contact</a>
                       </li>
                       <li class="nav-item ">
-                        <a class="nav-link appoinment-btn text-white rounded-pill px-4 ms-4" href="#">Make an Appointment</a>
+                        <a class="nav-link border-bottom-0 appoinment-btn text-white rounded-pill px-4 ms-4" href="#">Make an Appointment</a>
                       </li>
                     </ul>
                   </div>
@@ -754,6 +798,82 @@
         </div>
       </section>
 
+
+      <!-- newsletter section -->
+      <section class="newslatter py-5 mt-5">
+        <div class="container">
+        <div class="row g-3">
+          <div class="col-lg-3 col-md-6">
+            <div class="medilab-info">
+              <h3>Medilab</h3>
+              <p>A108 Adam Street <br>
+                New York, NY 535022 <br>
+                United States <br><br>
+                
+                <strong>Phone:</strong> +1 5589 55488 55 <br>
+                <strong>Email:</strong> info@example.com</p>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-6">
+            <div class="useful-link d-flex flex-column">
+              <h4>Useful Links</h4>
+              <a href=""><i class="fas fa-chevron-right"></i> Home</a>
+              <a href=""><i class="fas fa-chevron-right"></i> About us</a>
+              <a href=""><i class="fas fa-chevron-right"></i> Services</a>
+              <a href=""><i class="fas fa-chevron-right"></i> Terms of service</a>
+              <a href=""><i class="fas fa-chevron-right"></i> Privacy policy</a>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="useful-link d-flex flex-column">
+              <h4>Our Services</h4>
+              <a href=""><i class="fas fa-chevron-right"></i> Web Designer</a>
+              <a href=""><i class="fas fa-chevron-right"></i> Web Development</a>
+              <a href=""><i class="fas fa-chevron-right"></i> Product Management</a>
+              <a href=""><i class="fas fa-chevron-right"></i> Marketing</a>
+              <a href=""><i class="fas fa-chevron-right"></i> Graphic Design</a>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="newsletter-info">
+              <h4>Join Our Newsletter</h4>
+              <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
+              <form action="" class="newsletter-form">
+                <input class="news-letter-email" type="email" name="" id="">
+                <input class="subscribe-btn" type="submit" value="Subscribe">
+              </form>
+            </div>
+          </div>
+        </div>
+        </div>
+      </section>
+
+      <!-- footer section -->
+      <footer class="footer py-4">
+        <div class="container">
+          <div class="row gy-4">
+            <div class="col-sm-12 col-lg-6 col-md-6 credit-center">
+              <div class="d-flex flex-column">
+                <div class="copyright ">
+                  © Copyright <strong>Medilab</strong>. All Rights Reserved
+                </div>
+                <div class="credits mt-2">
+                  Designed by <a href="">BootstrapMade</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-12 col-lg-6 col-md-6 flex-End">
+              <div class="footer-social-icon">
+                  <a href=""><i class="fab fa-twitter"></i>
+                  <a href=""><i class="fab fa-facebook-f"></i></a>
+                  <a href=""><i class="fab fa-instagram"></i></a>
+                  <a href=""><i class="fab fa-skype"></i></a>
+                  <a href=""><i class="fab fa-linkedin"></i></a></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
 
 </main>
 

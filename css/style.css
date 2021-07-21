@@ -18,10 +18,12 @@ navigation bar
     background-color: #1977cc;
 
 }
-.active{
+
+ .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
     color: #1977cc;
-    border-color: #1977cc;
+    border-bottom: 2px solid #1977cc;
 }
+
 
 
 /*--------------------------
@@ -453,6 +455,103 @@ sup,sub{
     background: #1977cc;
     color: #fff;
 }
+/* --------------------
+ newsletter section
+---------------------- */
+.medilab-info h3{
+    color: #2c4964;
+}
+.medilab-info p{
+    font-size: 14px;
+    line-height: 24px;
+    color: #777777;
+}
+.useful-link h4{
+    font-size: 16px;
+    font-weight: bold;
+    color: #444444;
+    position: relative;
+    padding-bottom: 12px;
+}
+.useful-link a{
+    text-decoration: none;
+    color: #777777;
+    transition: 0.3s;
+    display: inline-block;
+    line-height: 3;
+    font-size: 14px;
+}
+.useful-link a:hover{
+    color: #93b3d1;
+}
+.news-letter-info{
+    font-size: 16px;
+    font-weight: bold;
+    color: #444444;
+    padding-bottom: 12px;
+}
+.newsletter-form{
+    margin-top: 30px;
+    background: #fff;
+    padding: 6px 10px;
+    position: relative;
+    border-radius: 50px;
+    text-align: left;
+    border: 1px solid #bfdcf7;
+}
+.news-letter-email{
+    border: none;
+}
+.subscribe-btn{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    border: 0;
+    font-size: 16px;
+    padding: 0 20px;
+    background: #1977cc;
+    color: #fff;
+    transition: 0.3s;
+    border-radius: 50px;
+}
+
+/* --------------------
+   footer section
+---------------------- */
+.footer{
+    background-color: #f0f7fd;
+}
+.flex-End{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.footer-social-icon a{
+text-decoration: none;
+font-size: 18px;
+    display: inline-block;
+    background: #1977cc;
+    color: #fff;
+    line-height: 1;
+    padding: 8px 0;
+    margin-right: 4px;
+    border-radius: 50%;
+    text-align: center;
+    width: 36px;
+    height: 36px;
+    transition: 0.3s;
+}
+.footer-social-icon a:hover{
+    background: #1c84e3;
+    color: #fff;
+    text-decoration: none;
+}
+
+
+
+
+
 
 
 
@@ -460,6 +559,11 @@ sup,sub{
 /* --------------------
       media query
 ---------------------- */
+@media (min-width: 992px) {
+    .modal-backdrop.show {
+        opacity: 0;
+    }
+}
 
 @media (max-width: 992px) {
     .departments .nav-link.active{
@@ -471,4 +575,24 @@ sup,sub{
         text-align: center;
         border-right: 0;
     } 
+    .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+        color: 0;
+        border-bottom: 0;
+    }
+}
+@media (max-width: 768px) {
+    .flex-End{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .credit-center{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+        color: 0;
+        border-bottom: 0;
+    }
 }
